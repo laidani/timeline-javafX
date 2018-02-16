@@ -19,8 +19,11 @@ This project use
 
 * **Laidani Youcef** - *Full Stack developer*
 
+## Youtube video
+
+[Create a TimeLine using JavaFX](https://www.youtube.com/watch?v=7PnjOO1QdAs) 
 
 ## Acknowledgments
 
-* https://docs.oracle.com/javafx/2/fxml_get_started/custom_control.htm
+* [Creating a Custom Control with FXML](https://docs.oracle.com/javafx/2/fxml_get_started/custom_control.htm)
 * My imagination
