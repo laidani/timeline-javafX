@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<fx:root prefHeight="90.0" prefWidth="643.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <Separator layoutX="122.0" layoutY="54.0" prefHeight="14.0" prefWidth="464.0" />
+    <Separator layoutX="106.0" layoutY="1.0" orientation="VERTICAL" prefHeight="49.0" prefWidth="17.0" />
+    <JFXButton fx:id="showMoreBtn" layoutX="544.0" layoutY="11.0" onAction="#showDetail" prefHeight="29.0" prefWidth="84.0" styleClass="button-show" stylesheets="@../styles/Styles.css" text="Show More" textFill="WHITE" />
+    <Circle fill="#009688" layoutX="114.0" layoutY="58.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Separator layoutX="106.0" layoutY="70.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="17.0" style="-fx-background-size: ;" />
+    <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutY="41.0" prefHeight="17.0" prefWidth="106.0" text="16/02/2018 14:53" />
+    <Separator layoutX="6.0" layoutY="55.0" prefHeight="13.0" prefWidth="99.0" />
+   <VBox layoutX="133.0" layoutY="6.0" prefHeight="53.0" prefWidth="373.0" spacing="10.0">
+      <children>
+          <Label fx:id="title" prefHeight="17.0" prefWidth="385.0" styleClass="title" stylesheets="@../styles/Styles.css" text="Title" />
+          <Label fx:id="details" prefHeight="17.0" prefWidth="387.0" text="Some text here" />
+      </children>
+   </VBox>
+</fx:root>

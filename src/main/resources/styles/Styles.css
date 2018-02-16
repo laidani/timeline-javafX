@@ -1,0 +1,10 @@
+.title{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.button-show{
+    -fx-background-color : #009688;
+    -fx-font-weight: bold;
+}
