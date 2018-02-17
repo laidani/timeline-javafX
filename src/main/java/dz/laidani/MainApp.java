@@ -7,6 +7,8 @@ import java.util.List;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -19,7 +21,7 @@ public class MainApp extends Application {
     private static List<TimeLineUnit> listeTimeLine;
     
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage primaryStage) throws Exception {
 
         //This will fill the Time Line Unit in your Gui
         VBox vbox = new VBox();
@@ -35,11 +37,17 @@ public class MainApp extends Application {
             vbox.getChildren().add(unitController);
         }
 
-        Scene scene = new Scene(vbox);
+        ScrollPane scrollPane = new ScrollPane(vbox);
+        scrollPane.setFitToHeight(true);
+
+        BorderPane root = new BorderPane(scrollPane);
+        
+        Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
-        stage.setScene(scene);
-        stage.setTitle("Time Line Example using JavaFX");
-        stage.show();
+        primaryStage.setTitle("Time Line Example using JavaFX");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
     }
 
     public static void main(String[] args) {
@@ -51,27 +59,27 @@ public class MainApp extends Application {
                         .dateTime(LocalDateTime.parse("2018-02-06T13:45:00")).build()
         );
         listeTimeLine.add(
-                TimeLineUnit.builder().id(1).title("Create An application")
+                TimeLineUnit.builder().id(2).title("Create An application")
                         .details("Create new Maven JavaFx Applicaton")
                         .dateTime(LocalDateTime.parse("2018-02-06T14:10:00")).build()
         );
         listeTimeLine.add(
-                TimeLineUnit.builder().id(1).title("Gui design")
+                TimeLineUnit.builder().id(3).title("Gui design")
                         .details("Create a Simple unity of your Timeline, use your imagination ;)")
                         .dateTime(LocalDateTime.parse("2018-02-06T14:40:00")).build()
         );
         listeTimeLine.add(
-                TimeLineUnit.builder().id(1).title("Take a break")
+                TimeLineUnit.builder().id(4).title("Take a break")
                         .details("To refresh your brain, Take a break, move, take a coffé")
                         .dateTime(LocalDateTime.parse("2018-02-06T15:00:00")).build()
         );
         listeTimeLine.add(
-                TimeLineUnit.builder().id(1).title("Controller")
+                TimeLineUnit.builder().id(5).title("Controller")
                         .details("Create a controller for your GUI")
                         .dateTime(LocalDateTime.parse("2018-02-06T15:30:00")).build()
         );
         listeTimeLine.add(
-                TimeLineUnit.builder().id(1).title("The END")
+                TimeLineUnit.builder().id(6).title("The END")
                         .details("Edit this class and fill this timeline")
                         .dateTime(LocalDateTime.parse("2018-02-06T16:00:00")).build()
         );
