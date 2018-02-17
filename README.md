@@ -10,7 +10,22 @@ This project use
   - jfoenix-1.9.0
   - Any IDE like Netbeans Eclipse IntelliJ IDEA 
   - Scene Builder.
-  
+
+## Install
+
+### Eclipse
+
+   - open the project
+   - mvn clean
+   - mvn install
+   - run the project 
+   
+### Netbeans
+
+   - open the project
+   - build with dependency 
+   - run the project 
+
 ## Result
 
 ![image](https://user-images.githubusercontent.com/13830834/36329703-379ea7c8-1367-11e8-84d4-fdae22fe4c62.png)
