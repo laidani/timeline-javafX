@@ -1,4 +1,4 @@
-# TimeLine-JavaFX
+# Time Line using JavaFX
 Basic idea about a TimeLine using JavaFX
 
 In this example we use Java 8, jfoenix-1.9.0, Netbeans, Scene Builder, lombok.
